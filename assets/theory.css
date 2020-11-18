@@ -1,0 +1,165 @@
+body {
+	display: grid;
+	grid-template-areas: 
+	'header header header'
+	'section-container section-container section-container'
+	'block-left content block-right'
+	'block-left footer block-right';
+	grid-template-rows: 70px auto 615px 200px;
+	grid-template-columns: 100px auto 100px;
+	grid-column-gap: 5px;
+	grid-row-gap: 20px;
+}
+
+header {
+	grid-area: header;
+	font-family: Hind, sans-serif;
+ 	background-color: yellow;
+ 	padding: 30px  ;
+	font-size: 14px;
+}
+
+.block-left {
+	grid-area: block-left;
+	background-color: red;
+}
+
+.section-container {
+	grid-area: section-container;
+}
+
+.block-right {
+	grid-area: block-right;
+	background-color: plum;
+}
+
+content {
+	grid-area: content;
+	background-color: gray;
+}
+
+.footer {
+	grid-area: footer;
+	position: fixed;
+}
+
+.section-container {
+	display: grid;
+	grid-template-areas: 
+	'left right';
+	grid-template-columns: 200px 705px;
+	margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+}
+
+.left {
+	width: 500px;
+	height: 200px;
+	grid-area: left;
+}
+
+.right {
+	grid-area: right;
+	margin: 0 auto; 
+	width: 100px;
+	line-height: 1px;
+}
+
+.patrat {
+	position: relative;
+    -webkit-animation: mymove 5s infinite; 
+ 	animation: mymove 5s infinite;
+}
+@-webkit-keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+
+
+nav {
+	float: right;
+	position: fixed;
+	top: 15px;
+	left: 800px;
+
+}
+
+nav li {
+	display: inline-block;
+	border: 1px solid;
+	border-color: white;
+	padding: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	color: black;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+    color: black; 
+} 
+ a:hover {
+    color: gray; 
+}
+
+header p {
+	float: left;
+	position: fixed;
+	top: 20px;
+	left: 150px;
+	text-shadow: 3px 2px plum;
+}
+
+li {
+	list-style: none;
+}
+
+content p {
+	font-size: 20px;
+}
+
+content a {
+	font-size: 18px;
+}
+
+
+.footer-container {
+	display: grid;
+	grid-template-areas: 
+	'left-footer center-footer right-footer';
+	grid-template-rows: 100px;
+	grid-template-columns: auto auto auto;
+}
+
+.left-footer {
+	grid-area: left-footer;
+}
+
+.center-footer {
+	grid-area: center-footer;
+}
+
+.right-footer {
+	grid-area: right-footer;
+}
+
+.footer-container li {
+	list-style-type: none;
+	font-family: Hind, sans-serif;
+	text-align: left;
+	font-size: 20px;
+	padding: 10px;
+}
+

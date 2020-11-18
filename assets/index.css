@@ -1,21 +1,26 @@
 .header {
 	grid-area: header;
-	background-color: white;
 }
 
 .section {
 	grid-area: section;
-	
 	position: relative;
 }
 
 .article {
 	grid-area: article;
-	background-color: white;
 }
 
 .content {
 	grid-area: section;
+}
+
+.content-container {
+	grid-area: content-container;
+}
+
+.bottom-article-container {
+	grid-area: bottom-article-container;
 }
 
 .footer {
@@ -24,13 +29,15 @@
 
 .container {
 	display: grid;
-	grid-template-rows: 70px 500px 100px 500px 90px;
+	grid-template-rows: 70px 500px 100px 500px 300px 200px 90px ;
   	grid-template-columns: 100px auto 100px;
   	grid-template-areas:
     ' block-left header block-right'
     ' block-left section block-right'
     ' block-left article block-right'
-    ' block-left content block-right'
+	' block-left content block-right'
+	' block-left content-container block-right'
+	' block-left bottom-article-container block-right '
     ' block-left footer block-right';
   	grid-gap: 10px;
   	padding: 0;
@@ -48,26 +55,28 @@
 
 body {
 	color: black;
+	font-family: Hind, sans-serif;
 }
 
 .container > div {
 	 
 	  padding: 20px 0 0;
 	  font-size: 14px;
-	  font-family: Hind, sans-serif;
+	  
 }
 
 .logo {
 	float: left;
-	position: fixed;
-	top: 20px;
+	position: absolute;
+	top: -13px;
 	left: 150px;
-	text-shadow: 3px 2px plum;
+
+
 }
 
 nav {
 	float: right;
-	position: fixed;
+	position: absolute;
 	top: 15px;
 	left: 800px;
 
@@ -81,8 +90,6 @@ nav ul {
 
 nav li {
 	display: inline-block;
-	border: 1px solid;
-	border-color: white;
 	padding: 10px;
 }
 
@@ -110,7 +117,7 @@ nav a {
 }
 
 .text {
-	background-color: plum;
+	background-color: rgb(36, 113, 163);
  	font-size: 16px;
  	width: 150px;
  	height: 25px;
@@ -119,10 +126,38 @@ nav a {
   	text-align: center;
   	margin: 0 auto;
   	border-radius: 30px;
+  	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.text span {
+	cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.text span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -25px;
+  transition: 0.5s;
+}
+
+.text:hover span {
+  padding-right: 25px;
+}
+
+.text:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 .text a {
 	line-height: 25px;
+	color: white;
 }
 
 .article-container {
@@ -131,35 +166,50 @@ nav a {
 	'left center right';
 	grid-template-rows: 190px;
 	grid-template-columns: auto auto auto;
-	margin: 15px;
+	margin-top: 15px;
 	padding: 10px;
 	grid-gap: 50px;
-	animation-name: intro;
-	animation-duration: 2s;
-	animation-delay: 0;
+	
+}
+.article-container > div{
+	width: 220px;
+}
+
+.article-container strong {
+	text-shadow: rgba(36, 113, 163, 0.5) 2px 5px;
 }
 
 .left {
 	grid-area: left;
 	text-align: left;
 	font-size: 20px;
-	
+	animation-name: intro;
+	animation-duration: 2s;
+	animation-delay: 600ms;
+}
+.left span {
+	color: rgb(36, 113, 163);
+	text-decoration: underline;
 }
 
 .center {
 	grid-area: center;
 	text-align: center;
 	font-size: 20px;
-
+	animation-name: intro;
+	animation-duration: 2s;
+	animation-delay: 300ms;
 	
 }
 
 .right {
 
 	font-size: 20px;
-	
-
+	animation-name: intro;
+	animation-duration: 2s;
+	animation-delay: 0;
 }
+
 
 @keyframes intro {
 	0% {
@@ -167,8 +217,6 @@ nav a {
 	}
 	100% {
 		margin-left: 0;
-	grid-area: right;
-	text-align: right;
 	}
 
 }
@@ -182,7 +230,7 @@ a:visited {
     color: black; 
 } 
 
-   a:hover {
+a:hover {
     color: gray; 
 }
 
@@ -192,18 +240,51 @@ hr {
 
 .content {
 	font-family: Hind, sans-serif;
-}
+ }
 
 .content h3 {
 	font-size: 30px;
 	text-align: left;
+	text-shadow: rgba(36, 113, 163, 0.5) 2px 5px;
 }
 
-.content p {
+.content li {
+	list-style-type: square;
 	font-size: 25px;
 	margin: 10px 30px;
 	text-indent: 20pt;
 	text-align: left;
+}
+
+.content-container div {
+	display: inline-block;
+	padding-left: 30px;
+}
+
+.content-container h2 {
+	text-shadow: rgba(36, 113, 163, 0.5) 2px 5px;
+	font-size: 25px;
+}
+
+.content-img p {
+	margin-left: 60px;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+.bottom-article-container div {
+	width: 30%;
+	height: 60%;
+	border: 1px;
+	border-style: solid;
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: rgb(195, 232, 247);
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .footer-container {
@@ -228,8 +309,14 @@ hr {
 
 .footer-container li {
 	list-style-type: none;
-	font-family: Hind, sans-serif;
 	text-align: left;
-	font-size: 20px;
+	font-size: 17px;
 	padding: 10px;
+	text-decoration: underline;
+	margin-left: 30px;
+}
+
+#footer {
+	text-align: right;
+	text-decoration: none;
 }
