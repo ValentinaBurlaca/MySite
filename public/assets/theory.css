@@ -5,23 +5,25 @@ body {
 	'section-container section-container section-container'
 	'block-left content block-right'
 	'block-left footer block-right';
-	grid-template-rows: 70px auto 615px 200px;
+	grid-template-rows: 70px auto 615px 100px;
 	grid-template-columns: 100px auto 100px;
 	grid-column-gap: 5px;
 	grid-row-gap: 20px;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-size: 300px 700px;
+	
 }
 
 header {
 	grid-area: header;
 	font-family: Hind, sans-serif;
- 	background-color: yellow;
  	padding: 30px  ;
 	font-size: 14px;
 }
 
 .block-left {
 	grid-area: block-left;
-	background-color: red;
 }
 
 .section-container {
@@ -30,12 +32,10 @@ header {
 
 .block-right {
 	grid-area: block-right;
-	background-color: plum;
 }
 
 content {
-	grid-area: content;
-	background-color: gray;
+	grid-area: content;;
 }
 
 .footer {
@@ -43,52 +43,60 @@ content {
 	position: fixed;
 }
 
-.section-container {
-	display: grid;
-	grid-template-areas: 
-	'left right';
-	grid-template-columns: 200px 705px;
-	margin-left: auto;
-    margin-right: auto;
-    width: 40em;
+.logo {
+	float: left;
+	position: absolute;
+	top: -13px;
+	left: 150px;
 }
 
-.left {
-	width: 500px;
-	height: 200px;
+nav {
+	float: right;
+	position: absolute;
+	top: 15px;
+	left: 800px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	
+}
+
+nav li {
+	display: inline-block;
+	padding: 10px;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+
+
+.section-container img {
+	width: 600px;
+	height: 300px;
 	grid-area: left;
+	margin: 0 380px;
+	border-radius: 50%;
 }
 
 .right {
 	grid-area: right;
-	margin: 0 auto; 
+	margin: 0 370px; 
 	width: 100px;
+	height: 50px;
 	line-height: 1px;
+	
 }
 
-.patrat {
-	position: relative;
-    -webkit-animation: mymove 5s infinite; 
- 	animation: mymove 5s infinite;
-}
-@-webkit-keyframes mymove {
-  from {left: 0px;}
-  to {left: 300px;}
+.block-right p {
+font-weight: bold;
+border: 1px;
+border-style: solid;
 }
 
-@keyframes mymove {
-  from {left: 0px;}
-  to {left: 300px;}
-}
-
-
-nav {
-	float: right;
-	position: fixed;
-	top: 15px;
-	left: 800px;
-
-}
 
 nav li {
 	display: inline-block;

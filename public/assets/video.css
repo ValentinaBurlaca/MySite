@@ -1,0 +1,116 @@
+body {
+	margin: 0 auto;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-family: Hind, sans-serif;
+	
+}
+
+header {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+	display: grid;
+	padding: 10px 0 0;
+	font-size: 14px;
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.logo img{
+	margin: -25px 0 0;
+}
+
+li {
+	list-style: none;
+	
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	color: black;
+	text-shadow: rgba(36, 113, 163, 0.5) 2px 5px;
+
+}
+
+button {
+    border: 0;
+    background-color: rgba(36, 113, 163, 0.5);
+    border-radius: 10px;
+    margin: 0 60px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#third {
+    margin-left: -50px;
+}
+#second {
+    margin-left: -50px;
+    margin-top: 300px;
+}
+
+#fourth {
+    margin-top: 50px;
+    margin-left: 80px;
+}
+
+#fiveth {
+    margin-top: 150px;
+    margin-left: 160px;
+}
+
+#sixth {
+    margin-left: -20px;
+    margin-top: -160px;
+}
+
+footer  {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+footer li {
+	font-size: 17px;
+	padding: 10px;
+	text-decoration: underline;
+	margin-left: 30px;
+}
+
+#bottom-element {
+	text-align: right;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+	
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+
+a:visited {
+    color: black; 
+} 
+
+a:hover {
+    color: gray; 
+}
