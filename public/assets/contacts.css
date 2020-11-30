@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+    position: relative;
+    padding-right: 5%;
+	font-family: Hind, sans-serif;
+}
+
+header {
+    position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	display: grid;   
+	font-size: 14px;
+}
+
+nav ul {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.logo img{
+	margin: -25px 0 0;
+}
+
+li {
+	list-style: none;
+	
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
