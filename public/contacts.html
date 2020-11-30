@@ -29,6 +29,163 @@
             </ul>
         </nav>
     </header>
-</header>
+    <section>
+    <div class="content-container">
+        <h2>Our teachers/ Наши преподаватели</h2>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="img/f.jpg" alt="img" style="width: 100%; height: 190px;">  
+            </div>
+            <div class="flip-box-back">
+                <h2>
+                    Ann Ribac <br/>
+                    ribacann@gmail.com
+                </h2>
+            </div>
+            </div>
+        </div>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <img src="img/s.jpg" alt="img" style="width: 100%; height: 190px;">
+            </div>
+            <div class="flip-box-back">
+                <h2>
+                    Alice Gonchar
+                    <br/>
+                    aligon@mail.ru 
+                </h2>
+            </div>
+            </div>
+        </div>
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="img/t.jpg" alt="img" style="width: 100%; height: 190px;">
+                </div>
+            <div class="flip-box-back">
+                <h2>
+                    Mary Cotovei
+                    <br/>
+                    cotoveimar@gmail.com
+                </h2>
+            </div>
+        </div>
+    </div>
+    <hr width="800px">
+    </section>
+    
+    <section>
+        <div id="select">
+            <form action="/action_page.php" method="get">
+                <label for="countries"><h2>Choose your country: </h2></label>
+                <input list="countries" name="countries" id="countriesr">
+                <datalist id="countries">
+                    <option value="Moldova">
+                    <option value="Russia">
+                    <option value="Ucraine">
+                    <option value="Romania">
+                </datalist>
+                <input type="submit">
+            </form>
+        </div>
+        <br/>
+        <hr width="800"/>
+        <div id="btn">
+            <h3>Регистрация/ вход: 
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                Login</button></h3>
+            <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                <button type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+            </form>
+        </div>
+        <div id="video">
+            <h2>Let's watch and study English with us</h2>
+            <video width="700" controls>
+                <source src="video/Skyeng.mp4" type="video/mp4">
+                <source src="video/Skyeng.mp4" type="video/ogg">
+                Your browser does not support HTML video.
+                </video>
+                <p>
+                Источник:
+                <a href="https://www.youtube.com/watch?v=NdnHIgPP9PM" target="_blank">100 РАЗГОВОРНЫХ ФРАЗ на английском языке. Какие слова и как учить? </a>
+                </p>
+    </div>    
+    </section>
+    <hr width="800"/>
+    
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+    <div class="footer">
+        <div class="footer-container">	
+            <ul class="left-footer">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Video</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+            </ul>	
+            <ul class="center-footer">
+                <li>
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <a href="#">Instagram</a>
+                </li>
+                <li>
+                    <a href="#">YouTube</a>
+                </li>
+            </ul>	
+            <ul class="right-footer">
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    
+                </li>
+                <br/>
+                <li id="footer">
+                    ©EngLe-Ng 
+                </li>
+            </ul>	
+        </div>
+    </div>
 </body>
 </html>

@@ -30,8 +30,8 @@
 .container {
 	display: grid;
 	grid-template-rows: 70px 500px 100px 500px 300px 200px 90px ;
-  	grid-template-columns: 100px auto 100px;
-  	grid-template-areas:
+	grid-template-columns: 100px auto 100px;
+	grid-template-areas:
     ' block-left header block-right'
     ' block-left section block-right'
     ' block-left article block-right'
@@ -39,10 +39,10 @@
 	' block-left content-container block-right'
 	' block-left bottom-article-container block-right '
     ' block-left footer block-right';
-  	grid-gap: 10px;
-  	padding: 0;
-  	margin: 0;
-  	width: 100%
+	grid-gap: 10px;
+	padding: 0;
+	margin: 0;
+	width: 100%
 }
 
 .block-left {
@@ -59,10 +59,8 @@ body {
 }
 
 .container > div {
-	 
-	  padding: 20px 0 0;
-	  font-size: 14px;
-	  
+	padding: 20px 0 0;
+	font-size: 14px;
 }
 
 .logo {
@@ -104,52 +102,52 @@ nav a {
 }
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto
+	display: block;
+	width: 100%;
+	height: auto
 }
 
 .middle {
-  display:flex;
+	display:flex;
 }
 
 .text {
 	background-color: rgb(36, 113, 163);
- 	font-size: 16px;
- 	width: 150px;
- 	height: 25px;
- 	padding: 8px 16px;
- 	align-self: center;
-  	text-align: center;
-  	margin: 0 auto;
-  	border-radius: 30px;
-  	transition: all 0.5s;
+	font-size: 16px;
+	width: 150px;
+	height: 25px;
+	padding: 8px 16px;
+	align-self: center;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 30px;
+	transition: all 0.5s;
 	cursor: pointer;
 }
 
 .text span {
 	cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
 }
 
 .text span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -25px;
-  transition: 0.5s;
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -25px;
+	transition: 0.5s;
 }
 
 .text:hover span {
-  padding-right: 25px;
+	padding-right: 25px;
 }
 
 .text:hover span:after {
-  opacity: 1;
-  right: 0;
+	opacity: 1;
+	right: 0;
 }
 
 .text a {
@@ -237,7 +235,7 @@ hr {
 
 .content {
 	font-family: Hind, sans-serif;
- }
+}
 
 .content h3 {
 	font-size: 30px;
