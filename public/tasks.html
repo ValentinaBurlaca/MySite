@@ -7,8 +7,62 @@
     <title>Tasks</title>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque asperiores omnis corrupti nam dolores at earum optio, porro quae recusandae maxime aperiam repellendus voluptatum tempora eligendi cupiditate sint. Expedita!
-
-    </p>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" style="width: 190px; height: 100px;"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="file:///D:/git/MySite/public/theory.html">THEORY</a>
+                </li>
+                <li>
+                    <a href="">TASKS</a>
+                </li>
+                <li>
+                    <a href="file:///D:/git/MySite/public/video.html">VIDEO</a>
+                </li>
+                <li>
+                    <a href="#">CONTACTS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="taskone">
+        <h2>Tasks/Задания</h2>
+        <h5>Упражнения "Артикли"</h5>
+        <button onclick="myFunction()">open</button>
+        <div id="myDIV">
+            <p>
+                Поставьте артикли a или an <br/>
+                1. … elephant<br/>
+                2. … English dictionary<br/>
+                3. … butterfly <br/>  
+                4. … German car<br/>    
+                5. … Italian bag<br/> 
+                6. … American college<br/>
+                7. … Russian city<br/>   
+                8. … French designer<br/>   
+                9. … Indian river<br/>   
+                10. … egg<br/>   
+                11. … notebook<br/>   
+                12. … elegant lady<br/>   
+                13. … ice-cream<br/>   
+                14. … Japanese phone
+            </p>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myDIV");
+                if (x.style.display === "none") {
+                x.style.display = "block";
+                } else {
+                x.style.display = "none";
+                }
+            }
+            </script>
+    </section>
+    
 </body>
 </html>
