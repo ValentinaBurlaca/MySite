@@ -3,7 +3,7 @@ body {
 	max-width: 1152px;
 	margin:0 auto;
 	padding-left: 10%;
-	padding-right: 10%;
+	margin-right: 100px;
     position: relative;
 	font-family: Hind, sans-serif;
 }
@@ -37,7 +37,8 @@ li a{
 }
 
 #taskone {
-    position: absolute;
+	position: absolute;
+	margin-right: 100px;
     
 }
 
@@ -47,18 +48,85 @@ li a{
 	font-size: 25px;
 }
 
-#taskone h5 {
+#taskone h4 {
     position: relative;
     margin-top: 10px;
 }
 
 #taskone button {
     position: relative;
-    margin-top: 20px;
 }
 
 #taskone p {
     position: relative;
-    margin-top: 10px;
 }
 
+#taskone img {
+	position: relative;
+	margin-top: -250px;
+	margin-left: 700px;
+}
+
+
+#tasktwo {
+	position: absolute;
+	margin-top: 400px;
+}
+
+#tasktwo p {
+    position: relative;
+}
+
+#taskthree {
+	position: relative;
+	margin-top: 850px;
+}
+
+#taskthree img {
+	position: relative;
+	margin-left: 700px;
+	margin-top: -200px;
+	
+}
+
+pre {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#taskfive {
+	position: relative;
+}
+
+#taskfive img {
+	position: relative;
+	margin-left: 600px;
+	margin-top: -300px;
+}
+
+#taskfivef {
+	position: relative;
+}
+
+#taskfivef img {
+	position: relative;
+	margin-left: 900px;
+	margin-top: -180px;
+	width: 300px;
+	height: 200px;
+}
+
+#tasksix, #taskseven, #taskeight, #tasknine, #taskten, #taskeleven {
+	position: relative;
+}
+
+#taskeight img {
+	position: relative;
+	margin-left: 700px;
+	margin-top: -400px;
+}
+
+#taskeleven img {
+	position: relative;
+	margin-left: 700px;
+	margin-top: -250px;
+}
