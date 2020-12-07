@@ -130,3 +130,38 @@ pre {
 	margin-left: 700px;
 	margin-top: -250px;
 }
+
+footer  {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+footer li {
+	font-size: 17px;
+	padding: 10px;
+	text-decoration: underline;
+	margin-left: 30px;
+}
+
+#bottom-element {
+	text-align: right;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+	
+}
+
+li a{
+	text-decoration: none;
+	color: black;
+}
+
+
+a:visited {
+    color: black; 
+} 
+
+a:hover {
+    color: gray; 
+}
