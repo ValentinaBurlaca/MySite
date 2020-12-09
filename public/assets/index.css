@@ -8,6 +8,11 @@ body {
 	grid-area: header;
 }
 
+.header .main-logo {
+	width: 190px; 
+	height: 100px;
+}
+
 .section {
 	grid-area: section;
 	position: relative;
@@ -96,6 +101,10 @@ nav li {
 
 nav a {
 	text-decoration: none;
+}
+
+hr {
+	width: 800px;
 }
 
 .main-container {
@@ -208,7 +217,7 @@ nav a {
 	font-size: 20px;
 	animation-name: intro;
 	animation-duration: 2s;
-	animation-delay: 0;
+	animation-delay: 0s;
 }
 
 
@@ -332,7 +341,7 @@ hr {
 @media screen and (max-width: 1185px) {
 	nav li {
 		display: grid;
-		grid-template-rows: (5, 1fr);
+		grid-template-rows: repeat(5, 1fr);
 	}
 }
 
