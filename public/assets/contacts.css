@@ -7,6 +7,11 @@ body {
 	font-family: Hind, sans-serif;
 }
 
+.logotype {
+	width: 190px; 
+	height: 100px;
+}
+
 header {
     position: relative;
 	display: grid;

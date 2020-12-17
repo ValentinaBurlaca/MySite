@@ -7,29 +7,28 @@
     <link rel="stylesheet" href="assets/video.css">
 </head>
 <body>
-    <header>
-			<a href="file:///D:/git/MySite/public/index.html" class="logo"><img src="img/logo.png" style="width: 190px; height: 100px;"></a>
-			<nav>
-				<ul>
-					<li>
-						<a href="file:///D:/git/MySite/public/index.html">HOME</a>
-					</li>
-					<li>
-						<a href="file:///D:/git/MySite/public/theory.html">THEORY</a>
-					</li>
-					<li>
-						<a href="file:///D:/git/MySite/public/tasks.html">TASKS</a>
-					</li>
-					<li>
-						<a href="file:///D:/git/MySite/public/video.html">VIDEO</a>
-					</li>
-					<li>
-						<a href="file:///D:/git/MySite/public/contacts.html">CONTACTS</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-    </header>
+	<header>
+		<a href="file:///D:/git/MySite/public/index.html" class="logo"><img src="img/logo.png" class="logotype" alt="logotype"></a>
+		<nav>
+			<ul>
+				<li>
+					<a href="file:///D:/git/MySite/public/index.html">HOME</a>
+				</li>
+				<li>
+					<a href="file:///D:/git/MySite/public/theory.html">THEORY</a>
+				</li>
+				<li>
+					<a href="file:///D:/git/MySite/public/tasks.html">TASKS</a>
+				</li>
+				<li>
+					<a href="file:///D:/git/MySite/public/video.html">VIDEO</a>
+				</li>
+				<li>
+					<a href="file:///D:/git/MySite/public/contacts.html">CONTACTS</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
     <h1>Video / Видео</h1>
     <button onclick="typeWriter()">Кликни</button>
     <br>
@@ -39,7 +38,6 @@
     var i = 0;
     var txt = 'Здравствуй, дорогой друг! На этой странице предсавлены видео для изучения английского языка вмеcте со онлайн-школами EngLe-ng и SkyEng, также ссылки на другие видео.Кликни на картинку и учи английский вместе с нами!';
         var speed = 50;
-
     function typeWriter() {
         if (i < txt.length) {
             document.getElementById("demo").innerHTML += txt.charAt(i);
@@ -56,7 +54,7 @@
         <a href="https://www.youtube.com/watch?v=J00Mydp7hmk&list=PLY8YD3DecacCNeBhXmvwX2J_UhkEOHLjn"><img id="fiveth" src="img/sivideo.png" alt="image"></a>
         <a href="https://www.youtube.com/watch?v=ULMKfIt95FY"><img src="img/fvideo.png" alt="image" id="sixth"></a>
     </section>
-    <hr width="800px"/>
+    <hr/>
 	<footer>
 		<ul>
 			<li>
@@ -84,7 +82,6 @@
 			<li>
 				<a href="#">Privacy</a>
 			</li>
-				<br/>
 			<li id="bottom-element">
 				©EngLe-Ng 
 			</li>
